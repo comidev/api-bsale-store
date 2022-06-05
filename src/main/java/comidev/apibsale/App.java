@@ -18,14 +18,8 @@ public class App {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**").allowedOrigins("http://127.0.0.1:5500");
+				registry.addMapping("/**").allowedOrigins("https://bsalestore.vercel.app");
 			}
 		};
 	}
 }
-
-/*
- * http://localhost:8080/products/sort?by=name&order=asc&numPage=6&limit=10
- *
- *
- */
